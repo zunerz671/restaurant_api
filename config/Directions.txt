@@ -18,3 +18,31 @@ An Order can be created.
 MenuItems can be linked to an Order through OrderItems.
 Viewing an Order shows all menu items attached to it.
 Focus: One-to-many + many-to-many associations, serializers (nested menu items in orders).
+
+Models - RON
+
+1. MenuItems
+  Attributes:
+    1. name:string
+    2. price:decimal
+    3. restaurant_id:integer
+
+2. OrderItem
+  Attributes:
+    1. customer_name:string
+
+3. Menu_Order
+  Attributes:
+    1. menuitems_id:integer
+    2. orderitems_id:integer
+
+Associations:
+
+1. MenuItems
+  - 
+
+Controllers - Kiko
+Routes - Kiko
+  CRUD
+
+Seeds - Junior
