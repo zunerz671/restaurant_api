@@ -1,0 +1,20 @@
+Restaurant Menu API
+Description: A system where restaurants have menu items, and orders include menu items.
+
+Associations:
+A Restaurant has many MenuItems
+An Order has many MenuItems through OrderItems
+
+Suggested Attributes:
+Restaurant: name, location
+MenuItem: name, price, restaurant_id
+Order: name (customer name), (no need for total logic yet)
+OrderItem: order_id, menu_item_id
+
+User Stories:
+A Restaurant can be created and listed.
+MenuItems can be created for a Restaurant.
+An Order can be created.
+MenuItems can be linked to an Order through OrderItems.
+Viewing an Order shows all menu items attached to it.
+Focus: One-to-many + many-to-many associations, serializers (nested menu items in orders).
