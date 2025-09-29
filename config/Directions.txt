@@ -19,6 +19,9 @@ MenuItems can be linked to an Order through OrderItems.
 Viewing an Order shows all menu items attached to it.
 Focus: One-to-many + many-to-many associations, serializers (nested menu items in orders).
 
+Spreadsheet: - Ron, Kiko, Junior
+
+
 Models - RON
 
 1. MenuItems
@@ -36,13 +39,14 @@ Models - RON
     1. menuitems_id:integer
     2. orderitems_id:integer
 
-Associations:
-
-1. MenuItems
-  - 
 
 Controllers - Kiko
 Routes - Kiko
   CRUD
 
 Seeds - Junior
+
+Associations - Junior:
+
+1. MenuItems
+  - 
